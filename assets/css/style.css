@@ -161,28 +161,6 @@ img {
   justify-content: center;
   margin-bottom: 10em;
 }
-.header-main {
-  padding: 1em;
-  margin: 3em;
-  background-color: #cfcecead;
-  border-radius: 0.5em;
-}
-.header-main h1 {
-  font-size: 2em;
-  color: #1b1b1b;
-}
-.body-container {
-  width: 40em;
-  padding: 1em;
-  background-color: var(--black-background);
-  box-shadow: 5px 10px 10px 0px var(--black-background);
-  border-radius: 0.5em;
-}
-.paragraph {
-  font-size: 1em;
-  text-align: justify;
-  color: var(--grey);
-}
 /* --------- Footer --------- */
 .footer-content {
   position: fixed;

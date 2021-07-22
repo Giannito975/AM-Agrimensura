@@ -151,12 +151,11 @@ img {
 
 .main-container {
   display: flex;
-  height: max-content;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10em;
+  margin-bottom: 7em;
 }
 .header-main {
   padding: 1em;
@@ -169,15 +168,21 @@ img {
   color: #1b1b1b;
 }
 .body-container {
+  width: 750px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 46em;
-  padding: 1em;
   background-color: var(--black-background);
   box-shadow: 5px 10px 10px 0px var(--black-background);
   border-radius: 0.5em;
+}
+.paragraph {
+  text-align: justify;
+}
+#article1 {
+  width: 100%;
+  padding: 0 20px;
 }
 article {
   width: 20em;
