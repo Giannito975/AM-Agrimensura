@@ -4,6 +4,8 @@
   --grey: #d8d8d8;
   --darkgrey: #343434;
   --black-background: #111010cc;
+  --primary: hsla(51, 100%, 50%, 0.295);
+  --secondary: hsla(0, 0%, 100%, 0);
 }
 * {
   margin: 0;
@@ -12,11 +14,15 @@
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 90px;
-  background: url("../images/002-logo-mdp.jpg") no-repeat fixed;
+  width: 100%;
+  height: 100vh;
+  padding-top: 80px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary)),
+    url("../images/002-logo-mdp.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
 img {
   width: 50px;
   margin: 0;
@@ -153,13 +159,22 @@ img {
 /* --------- Main --------- */
 
 .main-container {
+  position: relative;
+  width: 100%;
   display: flex;
-  height: max-content;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10em;
+}
+.title {
+  margin-top: 10em;
+  text-align: center;
+}
+.title h2 {
+  font-size: 2em;
+  font-weight: 300;
+  color: var(--darkgrey);
 }
 /* --------- Footer --------- */
 .footer-content {
