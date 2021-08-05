@@ -182,20 +182,18 @@ img {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.articles {
-  width: 20em;
-  margin: 1em;
-}
 html {
   scroll-behavior: smooth;
 }
-article [a] {
-  scroll-margin-top: 40px;
+.articles {
+  width: 20em;
+  margin: 1em;
+  scroll-margin: 100px;
 }
 .articles a {
   text-decoration: none;
   color: var(--gold);
-  font-size: 1.3em;
+  font-size: 1.2em;
   cursor: default;
 }
 .articles h3 {
@@ -204,7 +202,7 @@ article [a] {
 }
 .articles p {
   padding: 1em 0;
-  font-size: 1.1em;
+  font-size: 1em;
   text-align: justify;
   color: var(--grey);
 }
