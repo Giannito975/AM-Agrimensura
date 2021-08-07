@@ -19,14 +19,14 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-img {
+.logo {
   width: 50px;
   margin: 0;
   border-radius: 50%;
 }
 .header {
   width: 100%;
-  height: 80px;
+  height: 70px;
   padding: 0 20px;
   top: 0;
   left: 0;
@@ -44,9 +44,17 @@ img {
   cursor: pointer;
 }
 .firma {
-  margin-left: 10px;
+  margin-left: 10px !important;
   list-style: none;
   color: #fff;
+}
+.firma h3 {
+  font-size: 1.2em;
+}
+ol,
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .menu {
   margin-left: auto;
@@ -74,9 +82,10 @@ img {
 }
 .link:hover {
   transition: all ease-in 0.3s;
+  color: #fff !important;
 }
 .item-firma {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 .item-firma:last-child {
   margin-bottom: 0.3em;
@@ -93,8 +102,9 @@ img {
 
 .item {
   text-decoration: none;
-  padding: 20px 30px;
+  padding: 10px 20px;
   color: white;
+  font-size: 0.9em;
 }
 .listItem {
   position: relative;
@@ -122,6 +132,9 @@ img {
   position: absolute;
   right: 200px;
   top: 0;
+}
+li a:hover {
+  color: #fff;
 }
 .item:hover {
   background: var(--darkgrey);
@@ -164,36 +177,34 @@ img {
 }
 .header-main {
   padding: 1em;
-  margin: 2em;
-  background-color: #cfcecead;
-  border-radius: 0.5em;
+  margin: 1em;
 }
 .header-main h1 {
-  font-size: 2em;
-  color: #1b1b1b;
+  font-size: 3em;
+  font-weight: 400;
+  color: var(--darkgrey);
 }
 .body-container {
   width: 60em;
   padding: 1em;
   background-color: var(--black-background);
-  box-shadow: 5px 10px 10px 0px var(--black-background);
   border-radius: 0.5em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 html {
   scroll-behavior: smooth;
 }
 .articles {
-  width: 20em;
+  width: 25em;
   margin: 1em;
   scroll-margin: 100px;
 }
 .articles a {
   text-decoration: none;
   color: var(--gold);
-  font-size: 1.2em;
+  font-size: 1.3em;
   cursor: default;
 }
 .articles h3 {
@@ -201,10 +212,10 @@ html {
   font-weight: 400;
 }
 .articles p {
-  padding: 1em 0;
+  padding: 0.5em;
   font-size: 1em;
   text-align: justify;
-  color: var(--grey);
+  color: #fff;
 }
 
 /* --------- Footer --------- */

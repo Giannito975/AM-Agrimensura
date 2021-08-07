@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="../css/noticias.css" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4ab6721734.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!--MomentJS-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
+      integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>Noticias</title>
   </head>
   <body>
@@ -62,35 +76,180 @@
       <div class="header-main">
         <h1>Noticias</h1>
       </div>
-      <section class="body-container">
-        <article class="articles" id="article1">
-            <a href="#article1">• Estados Parcelarios (Ley 10.707)</a>
-            <p>
-            El Estado Parcelario es la tarea que realiza un Agrimensor al momento de una venta, compra o hipoteca de un inmueble. Como lo establece la Ley 10.707. Este servicio garantiza al comprador del inmueble que la propiedad tiene su valuación fiscal actualizada, sus medianeras en su correcta ubicación y el lote en la posición correcta de la manzana. 
-            Es un requisito para poder escriturar y es obligatorio en la Provincia de Buenos Aires.</p>
-            <h3>¿Cuánto dura el certificado?</h3><br>
-            <p>El estado parcelario de un inmueble en zona urbana tiene una vigencia de 2 años si es baldío, y 3 años si es edificado. Para los inmuebles en zonas rurales la vigencia es de 3 años</p>
-          </article>
-          <article class="articles" id="article2">
-            <a href="#article2">• Certificado de deslinde y amojonamiento</a><br>
-            <p>Es un documento confeccionado por el Agrimensor, quien certifica la correcta ubicación de los mojones. En él se deja constancia sobre la concordancia o discrepancia de las medidas existentes con las respectivas medidas del título.<br>
-            <p>El Amojonamiento, es la tarea que el Ingeniero Agrimensor lleva a cabo para materializar los límites legales de una parcela, conforme a un exhaustivo estudio dominial y catastral que realiza previamente.</p><br>
-            <p>El trabajo consiste primero en la adquisición de toda la información mencionada anteriormente, luego se lleva a cabo el relevamiento de todos los hechos existentes y de significancia en la zona de incumbencia y con toda esta información obtenida se procede a realizar el estudio que posibilita la correcta ubicación de los mojones en los vértices del bien inmueble, tanto en zona urbana como rural. Un amojonamiento del bien inmueble, realizado a tiempo y antes de comenzar a realizar las mejoras y/o edificaciones, evita posibles problemas ente vecinos.</p><br>
-            <p>​Mientras que el Deslinde es el acto formal de distinguir los límites de una propiedad, la acción de amojonar es una operación posterior y consecuencia del deslinde</p>
-          </article>
-          <article class="articles" id="article3">
-            <a href="#article3">• Relevamiento Planialtimétrico</a><br>
-              <p>Es un procedimiento topográfico que determina la situación planialtimétrica de una serie de puntos distribuidos sobre la superficie del terreno.</p><br>
-              <p>El objetivo principal del trabajo es obtener las coordenadas X, Y, Z de una gran cantidad de puntos en un mismo sistema de coordenadas, que luego de un debido post procesamiento, permite la representación cartográfica de los elementos naturales o artificiales sobre la zona en estudio.</p><br>
-              <p>En la actualidad se puede llevar a cabo mediante la utilización de equipos convencionales como la Estación Total, o a partir de tecnología de posicionamiento satelital como GPS/GNSS.</p><br>
-              <p>En definitiva, este acto de levantamiento converge en representar en un plano con sus respectivas curvas de nivel o mediante modelos digitales de terreno (MDT) la superficie del sector relevado.</p>
-          </article>
-          <article class="articles" id="article4">
-            <a href="#article4">• Declaración Jurada</a>
-            <p>Los propietarios, poseedores a título de dueño sean personas físicas o jurídicas, de carácter privado o público, estarán obligados a denunciar cualquier modificación que se introduzca en la parcela de su propiedad a través de la presentación de una declaración jurada de avalúo.</p><br>
-            <p>El tramite deberá realizarse dentro del término máximo de treinta (30) días contados a partir de que tal modificación se encuentre en condiciones de habitabilidad o habilitación. Asimismo, en ocasión de efectuarse un acto de relevamiento parcelario con el objeto de constituir, modificar o ratificar la subsistencia del estado parcelario, estarán obligados a declarar las accesiones incorporadas a la parcela.</p>
-          </article>
-      </section>
+    <div
+      class="
+        card-container
+        d-flex
+        flex-wrap
+        align-items-center
+        justify-content-evenly
+      "
+    >
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex">
+            <img
+              src="../images/noticia.jpg"
+              class="card-img-top"
+              alt="noticia"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text d-flex flex-wrap justify-content-start">
+                <!-- Facebook -->
+                <a
+                  class="btn btn-primary"
+                  style="background-color: #3b5998; border-color: #3b5998"
+                  href="#"
+                  role="button"
+                  ><i class="fab fa-facebook-f me-2"></i>Ver más</a
+                >
+
+                <!-- Instagram -->
+                <a
+                  class="btn btn-secondary ms-2"
+                  style="background-color: #ac2bac; border-color: #ac2bac"
+                  href="#"
+                  role="button"
+                  ><i class="fab fa-instagram me-2"></i>Ver más</a
+                >
+              </p>
+              <small class="text-muted" style="color: #d1d1d1!important" id="data-time"></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex">
+            <img
+              src="../images/noticia.jpg"
+              class="card-img-top"
+              alt="noticia"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text d-flex flex-wrap justify-content-start">
+                <!-- Facebook -->
+                <a
+                  class="btn btn-primary"
+                  style="background-color: #3b5998; border-color: #3b5998"
+                  href="#"
+                  role="button"
+                  ><i class="fab fa-facebook-f me-2"></i>Ver más</a
+                >
+
+                <!-- Instagram -->
+                <a
+                  class="btn btn-secondary ms-2"
+                  style="background-color: #ac2bac; border-color: #ac2bac"
+                  href="#"
+                  role="button"
+                  ><i class="fab fa-instagram me-2"></i>Ver más</a
+                >
+              </p>
+              <small class="text-muted" style="color: #d1d1d1!important" id="data-time"></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex">
+            <img
+              src="../images/noticia.jpg"
+              class="card-img-top"
+              alt="noticia"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text d-flex flex-wrap justify-content-start">
+                <!-- Facebook -->
+                <a
+                  class="btn btn-primary"
+                  style="background-color: #3b5998; border-color: #3b5998"
+                  href="#"
+                  role="button"
+                  ><i class="fab fa-facebook-f me-2"></i>Ver más</a
+                >
+
+                <!-- Instagram -->
+                <a
+                  class="btn btn-secondary ms-2"
+                  style="background-color: #ac2bac; border-color: #ac2bac"
+                  href="#"
+                  role="button"
+                  ><i class="fab fa-instagram me-2"></i>Ver más</a
+                >
+              </p>
+              <small class="text-muted" style="color: #d1d1d1!important" id="data-time"></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex">
+            <img
+              src="../images/noticia.jpg"
+              class="card-img-top"
+              alt="noticia"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text d-flex flex-wrap justify-content-start">
+                <!-- Facebook -->
+                <a
+                  class="btn btn-primary"
+                  style="background-color: #3b5998; border-color: #3b5998"
+                  href="#"
+                  role="button"
+                  ><i class="fab fa-facebook-f me-2"></i>Ver más</a
+                >
+
+                <!-- Instagram -->
+                <a
+                  class="btn btn-secondary ms-2"
+                  style="background-color: #ac2bac; border-color: #ac2bac"
+                  href="#"
+                  role="button"
+                  ><i class="fab fa-instagram me-2"></i>Ver más</a
+                >
+              </p>
+              <small class="text-muted" style="color: #d1d1d1!important" id="data-time"></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </main>
     <footer class="footer-content">
       <div class="inner-footer">
@@ -98,14 +257,14 @@
           <ul>
             <li class="social-items 1">
               <a class="redes" href="https://www.facebook.com/amagrimensura" target="_blank">
-              <svg height="25pt" viewBox="0 0 512 512" width="25pt" xmlns="http://www.w3.org/2000/svg"><path d="m483.738281 0h-455.5c-15.597656.0078125-28.24218725 12.660156-28.238281 28.261719v455.5c.0078125 15.597656 12.660156 28.242187 28.261719 28.238281h455.476562c15.605469.003906 28.257813-12.644531 28.261719-28.25 0-.003906 0-.007812 0-.011719v-455.5c-.007812-15.597656-12.660156-28.24218725-28.261719-28.238281zm0 0" fill="#4267b2"/><path d="m353.5 512v-198h66.75l10-77.5h-76.75v-49.359375c0-22.386719 6.214844-37.640625 38.316406-37.640625h40.683594v-69.128906c-7.078125-.941406-31.363281-3.046875-59.621094-3.046875-59 0-99.378906 36-99.378906 102.140625v57.035156h-66.5v77.5h66.5v198zm0 0" fill="#fff"/></svg>
+              <svg height="22pt" viewBox="0 0 512 512" width="22pt" xmlns="http://www.w3.org/2000/svg"><path d="m483.738281 0h-455.5c-15.597656.0078125-28.24218725 12.660156-28.238281 28.261719v455.5c.0078125 15.597656 12.660156 28.242187 28.261719 28.238281h455.476562c15.605469.003906 28.257813-12.644531 28.261719-28.25 0-.003906 0-.007812 0-.011719v-455.5c-.007812-15.597656-12.660156-28.24218725-28.261719-28.238281zm0 0" fill="#4267b2"/><path d="m353.5 512v-198h66.75l10-77.5h-76.75v-49.359375c0-22.386719 6.214844-37.640625 38.316406-37.640625h40.683594v-69.128906c-7.078125-.941406-31.363281-3.046875-59.621094-3.046875-59 0-99.378906 36-99.378906 102.140625v57.035156h-66.5v77.5h66.5v198zm0 0" fill="#fff"/></svg>
               </a></li>
             <li class="social-items 2">
                 <a class="redes" href=" https://www.instagram.com/agrimensura_am/?hl=en" target="_blank">
                   <?xml version="1.0" encoding="iso-8859-1"?>
                   <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0  -->
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 551.034 551.034" height="25pt" width="25pt" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve">
+                    viewBox="0 0 551.034 551.034" height="22pt" width="22pt" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve">
                   <g>
                     <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">
                     <stop  offset="0" style="stop-color:#E09B3D"/>
@@ -144,7 +303,7 @@
                 <?xml version="1.0" encoding="iso-8859-1"?>
                   <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0  -->
                   <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 512 512" height="25pt" width="25pt" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    viewBox="0 0 512 512" height="22pt" width="22pt" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                   <path style="fill:#4CAF50;" d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104
                     l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z"/>
                   <path style="fill:#FAFAFA;" d="M405.024,361.504c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264
@@ -166,5 +325,11 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/app.js"></script>
+    <!--Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

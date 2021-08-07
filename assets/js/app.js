@@ -19,3 +19,11 @@
     $(target).slideToggle();
   });
 })();
+
+moment.locale("es");
+
+let fecha = document.getElementById("data-time");
+setInterval(function () {
+  let now = moment();
+  fecha.innerHTML = now.startOf("days").fromNow();
+});

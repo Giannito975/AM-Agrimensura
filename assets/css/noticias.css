@@ -13,20 +13,20 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
-  padding-top: 90px;
+  height: max-content;
   background: url("../images/003-mdp.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-img {
+.logo {
   width: 50px;
   margin: 0;
   border-radius: 50%;
 }
 .header {
   width: 100%;
-  height: 80px;
+  height: 70px;
   padding: 0 20px;
   top: 0;
   left: 0;
@@ -44,9 +44,17 @@ img {
   cursor: pointer;
 }
 .firma {
-  margin-left: 10px;
+  margin-left: 10px !important;
   list-style: none;
   color: #fff;
+}
+.firma h3 {
+  font-size: 1.2em;
+}
+ol,
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .menu {
   margin-left: auto;
@@ -74,9 +82,10 @@ img {
 }
 .link:hover {
   transition: all ease-in 0.3s;
+  color: #fff !important;
 }
 .item-firma {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 .item-firma:last-child {
   margin-bottom: 0.3em;
@@ -93,8 +102,9 @@ img {
 
 .item {
   text-decoration: none;
-  padding: 20px 30px;
+  padding: 10px 20px;
   color: white;
+  font-size: 0.9em;
 }
 .listItem {
   position: relative;
@@ -122,6 +132,9 @@ img {
   position: absolute;
   right: 200px;
   top: 0;
+}
+li a:hover {
+  color: #fff;
 }
 .item:hover {
   background: var(--darkgrey);
@@ -152,7 +165,13 @@ img {
   color: var(--gold);
 }
 /* --------- Main --------- */
+main {
+  margin: 100px auto;
+}
 
+h3 {
+  margin-bottom: 0 !important;
+}
 .main-container {
   display: flex;
   height: max-content;
@@ -160,55 +179,52 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-bottom: 8em;
 }
 .header-main {
   padding: 1em;
-  margin: 2em;
-  background-color: #cfcecead;
-  border-radius: 0.5em;
-}
-.header-main h1 {
-  font-size: 2em;
-  color: #1b1b1b;
-}
-.body-container {
-  width: 60em;
-  padding: 1em;
-  background-color: var(--black-background);
-  box-shadow: 5px 10px 10px 0px var(--black-background);
-  border-radius: 0.5em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.articles {
-  width: 20em;
   margin: 1em;
 }
-html {
-  scroll-behavior: smooth;
-}
-article [a] {
-  scroll-margin-top: 40px;
-}
-.articles a {
-  text-decoration: none;
-  color: var(--gold);
-  font-size: 1.3em;
-  cursor: default;
-}
-.articles h3 {
-  color: var(--gold);
+.header-main h1 {
+  font-size: 3em;
   font-weight: 400;
+  color: var(--darkgrey);
 }
-.articles p {
-  padding: 1em 0;
-  font-size: 1.1em;
-  text-align: justify;
-  color: var(--grey);
+.card-container {
+  width: 1000px;
+  background-color: var(--black-background);
+  border-radius: 5px;
+}
+.card {
+  max-width: 450px;
+  max-height: 300px;
+  margin: 10px;
+  background-color: #3434345e !important;
+  border-color: var(--grey) !important;
+}
+.card-body {
+  padding: 10px;
 }
 
+.card-title {
+  color: var(--gold) !important;
+}
+.card-text {
+  font-size: 14px !important;
+  color: #fff !important;
+}
+.btn {
+  padding: 5px !important;
+}
+
+.btn-primary:hover {
+  background-color: #1642a3 !important;
+  border-color: #1642a3 !important;
+}
+
+.btn-secondary:hover {
+  background-color: #a520a5 !important;
+  border-color: #a520a5 !important;
+}
 /* --------- Footer --------- */
 .footer-content {
   position: fixed;
@@ -298,27 +314,22 @@ article [a] {
   .listItem .slide li:hover > ul {
     display: none;
   }
-  .main-container {
-    margin: 0 0 10em;
-    padding: 0;
+  .card-container {
     width: 100%;
+    max-height: max-content;
   }
-  .body-container {
+  .card {
+    width: 100%;
+    max-height: 100%;
+  }
+  .col {
     display: flex;
-    width: 70%;
+    flex-wrap: nowrap;
   }
 }
 
 @media screen and (max-width: 380px) {
   .menu {
-    width: 100%;
-  }
-
-  .main-container {
-    margin-bottom: 10em;
-  }
-  .body-container {
-    display: flex;
     width: 100%;
   }
 }
