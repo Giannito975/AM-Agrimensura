@@ -190,7 +190,9 @@ li a:hover {
   font-size: 10em;
   padding-right: 30px;
   color: #c9b233;
+  /*webkit-text-stroke: 4px black;*/
 }
+
 .title h2 {
   font-size: 4em;
   text-decoration: underline;
